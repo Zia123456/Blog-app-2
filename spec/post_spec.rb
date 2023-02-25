@@ -2,7 +2,7 @@ require_relative './rails_helper'
 
 RSpec.describe Post, type: :model do
   subject do
-    Post.new(title: 'Software', text: 'software enfineering is the best', comments_counter: 10, likes_counter: 15,
+    Post.new(title: 'Software engineering', text: 'software enfineering is the best', comments_counter: 10, likes_counter: 15,
              author_id: 10)
   end
 

@@ -99,6 +99,12 @@ To run the project, execute the following command:
   rails s
 ```
 
+### Run Test <a name="run test"></a>
+
+```
+  rspec
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
