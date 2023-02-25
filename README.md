@@ -59,10 +59,6 @@ The Blog app is a blog web app wich enables users to post, comment and like post
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- N/A
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
@@ -91,7 +87,8 @@ Install the project dependencies with:
 
 ```
   - bundle install
-  - npm install
+  - rails db:create
+  - rails db:migrate
 ```
 
 ### Usage <a name="usage"></a>
