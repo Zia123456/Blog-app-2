@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
-  belongs_to :users, class_name: 'Users', foreign_key: 'author_id'
-  has_many :comments, class_name: 'Comments', foreign_key: 'post_id'
-  has_many :likes, class_name: 'Likes', foreign_key: 'post_id'
+  belongs_to :author, class_name: 'User'
+  has_many :comments
+  has_many :likes
 
   after_save :update_posts_counter
 
