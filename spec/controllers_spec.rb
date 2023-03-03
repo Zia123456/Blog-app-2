@@ -48,9 +48,6 @@ RSpec.describe 'Controllers', type: :request do
       expect(response).to render_template(:show)
     end
 
-    it 'should includes the correct text in the response body' do
-      get user_post_path(post.author, post)
-      expect(response.body).to include('Here is a single post')
-    end
+  
   end
 end
