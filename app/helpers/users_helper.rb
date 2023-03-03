@@ -1,2 +1,2 @@
-module PostHelper
+module UsersHelper
 end
