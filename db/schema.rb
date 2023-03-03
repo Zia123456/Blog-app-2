@@ -37,7 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_25_103100) do
     t.string "title"
     t.string "text"
     t.integer "comments_counter"
-    t.integer "like_counter"
+    t.integer "likes_counter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "author_id"
@@ -45,11 +45,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_25_103100) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "first_name"
-    t.string "last_name"
+    t.string "name"
     t.string "photo"
     t.string "bio"
-    t.integer "post_counter"
+    t.integer "posts_counter"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
