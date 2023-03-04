@@ -1,12 +1,12 @@
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <style>
-      /* Email styles need to be inline */
-    </style>
-  </head>
-
-  <body>
-    <h1>Here is a single post</h1>
-  </body>
-</html>
+<h1>Here is a single post</h1>
+<div class="single-post">
+  <div class="post-details">
+    <h2>Post # <%= @posts.id %> by <%= @posts.author.name %></h2>
+    <p class="post-likes-comments">Comments: <%= @posts.comments_counter %>, Likes: <%= @posts.likes_counter %></p>
+    <p> <%= @posts.text %></p>
+  </div>
+  
+  <div class="comments">
+    <%= render "shared/comments", post: @posts %>
+  </div>
+</div>
