@@ -1,12 +1,20 @@
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <style>
-      /* Email styles need to be inline */
-    </style>
-  </head>
+<h1>Here is details of a single user</h1>
 
-  <body>
-    <h1>Here is details of a single user</h1>
-  </body>
-</html>
+<div class="single_user">
+  <%= render "shared/user", user: @user %>
+  <div class="bio-container">
+    <h3>Bio</h3>
+    <p><%= @user.bio %></p>
+  </div>
+</div>
+
+<div class="posts-container">
+  <% @recent_posts.each do |post| %>
+    <%= render "shared/posts", post: post %> 
+  <% end %>
+</div>
+
+<button type="button" class="btn">
+  <%= link_to "See All Posts", user_posts_path(@user) %>
+</button>
+</div>
