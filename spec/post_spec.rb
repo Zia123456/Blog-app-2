@@ -14,7 +14,7 @@ RSpec.describe Post, type: :model do
   end
 
   it 'title must be Software engineering' do
-    expect(subject.title).to eql 'AI'
+    expect(subject.title).to eql 'Software'
   end
 
   it 'title should be maximum 250 words' do

@@ -62,7 +62,7 @@ RSpec.describe 'User testing', type: :feature do
     end
 
     it "should have a button to view all of a user's posts" do
-      expect(page).to have_link("See all posts",  href: user_posts_path(user_id: @user.id))
+      expect(page).to have_link("See All Posts",  href: user_posts_path(user_id: @user.id))
     end
 
     it "should redirect to that post's show page" do
@@ -71,7 +71,7 @@ RSpec.describe 'User testing', type: :feature do
     end
 
     it 'should redirects to all posts show page.' do
-      click_link "See all posts"
+      click_link "See All Posts"
       expect(page).to have_current_path(user_posts_path(user_id: @user.id))
     end
   end
