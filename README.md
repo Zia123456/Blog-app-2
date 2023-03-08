@@ -117,6 +117,12 @@ To run the project, execute the following command:
 - Twitter: [@zia_bakhteyari](https://twitter.com/Zia_Bakhteyari)
 - LinkedIn: [Zia bakhteyari](https://www.linkedin.com/in/zia-bakhteyari)
 
+👤 **Abeera Tahir**
+
+- GitHub: [@AbeeraTahir](https://github.com/AbeeraTahir)
+- Twitter: [@AbeeraTahir8](https://twitter.com/AbeeraTahir8?t=z5CjMpmHMZmS98i09gUpYA&s=08)
+- LinkedIn: [Abeera Tahir](https://www.linkedin.com/in/abeera-tahir/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

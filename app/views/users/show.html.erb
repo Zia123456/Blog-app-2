@@ -9,9 +9,12 @@
 </div>
 
 <div class="posts-container">
-  <% @recent_posts.each do |post| %>
-    <%= render "shared/posts", post: post %> 
-  <% end %>
+  
+    <% @recent_posts.each do |post| %>
+      <%= link_to user_post_path(@user, post), class: "post" do %>
+        <%= render "shared/posts", post: post %> 
+      <% end %>
+    <% end %>
 </div>
 
 <button type="button" class="btn">

@@ -2,7 +2,9 @@
 <div class="single-post">
   <div class="post-details">
     <h2>Post # <%= @posts.id %> by <%= @posts.author.name %></h2>
+   
     <p class="post-likes-comments">Comments: <%= @posts.comments_counter %>, Likes: <%= @posts.likes_counter %></p>
+    <p><%= @posts.title  %></p>
     <p> <%= @posts.text %></p>
   </div>
   
