@@ -3,30 +3,36 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.text_field :name, autofocus: true, autocomplete: "name", placehoder: "Username" %>
+  <div class="form">
+  <div class="form-items">
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", placehoder: "Username", class: "form-fields border-black form-title" %>
   </div>
 
-  <div class="field">
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placehoder: "Email"  %>
+  <div class="form-items">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placehoder: "Email", class: "form-fields border-black form-title"  %>
   </div>
 
-  <div class="field">
+  <div class="form-items">
     <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password", placehoder: "Password" %>
+    <%= f.password_field :password, autocomplete: "new-password", placehoder: "Password", class: "form-fields border-black form-title" %>
   </div>
 
-  <div class="field">
+  <div class="form-items">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", placehoder: "Confirm Password" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", placehoder: "Confirm Password", class: "form-fields border-black form-title" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="sign-btn-checkbox">
+    <div class="actions">
+      <%= f.submit "Sign up" %>
+    </div>
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<div class="sign-btn-checkbox links">
+  <%= render "devise/shared/links" %>
+</div>
+</div>
