@@ -78,3 +78,70 @@ body {
 .btn {
   margin-top: 20px;
 }
+
+.form-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-items {
+  text-align: start;
+  width: 75%;
+  font-size: 1rem;
+}
+
+.form-fields {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-text {
+  height: 90px;
+}
+
+.back {
+  text-decoration: underline;
+}
+
+.sign-in-up {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto 0 auto;
+  gap: 10px;
+  width: 40%;
+}
+
+.sign-in-up h2 {
+  text-align: center;
+}
+
+.sign-btn-checkbox {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 10px auto 0 auto;
+  gap: 10px;
+}
+
+.btn-sign-in-up {
+  width: 100%;
+}
+
+.border-black {
+  border: 1px solid black;
+}
