@@ -1,7 +1,7 @@
 <%= link_to user_path(user) do %>
     <div class="user-container">
       <div class="img-container">
-        <%= image_tag user.photo %>
+      <img src="<%= user.photo %>" alt="avatar">
       </div>
       <div class="user_details">
         <h2 class="name"><%= user.name %></h2>
