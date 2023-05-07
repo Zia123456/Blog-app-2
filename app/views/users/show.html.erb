@@ -1,0 +1,25 @@
+<h1>Here is details of a single user</h1>
+
+<div class="single_user">
+  <%= render "shared/user", user: @user %>
+  <div class="bio-container">
+    <h3>Bio</h3>
+    <p><%= @user.bio %></p>
+  </div>
+</div>
+
+<div class="posts-container">
+  
+    <% @recent_posts.each do |post| %>
+      <%= link_to user_post_path(@user, post), class: "post" do %>
+        <%= render "shared/posts", post: post %> 
+      <% end %>
+    <% end %>
+</div>
+
+<button type="button" class="btn">
+  <%= link_to "See All Posts", user_posts_path(@user) %>
+</button>
+
+<button type="button" class="btn"><%= link_to "Create a post", new_user_post_path(@user)  %></button>
+</div>
