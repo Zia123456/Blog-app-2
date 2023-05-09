@@ -9,14 +9,14 @@
   </div>
   <div class="login-form-container">
     <div class="sign-in-up border-black">
-      <h2>Log in</h2>
+      <h1>Log in</h1>
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form">
           <div class="form-items">
-            <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-fields border-black form-title" %>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "form-fields" %>
           </div>
           <div class="form-items">
-            <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "form-fields border-black form-title" %>
+            <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "form-fields" %>
           </div>
         </div>
         <div class="sign-btn-checkbox">
@@ -28,10 +28,10 @@
           <% end %>
         </div> 
         <div class="actions">
-          <%= f.submit "Log in", class: "btn btn-sign-in-up" %>
+          <%= f.submit "Log in", class: "btn btn-sign-in" %>
         </div>
       <% end %>
-      <div class="sign-btn-checkbox links">
+      <div class="recovery-link">
         <%= render "devise/shared/links" %>
       </div>
     </div>
