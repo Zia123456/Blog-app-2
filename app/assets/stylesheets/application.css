@@ -119,6 +119,12 @@ body {
   align-items: center;
 }
 
+.msg {
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 68%;
+}
+
 /* .sign-in-up h2 {
   text-align: center;
 } */
