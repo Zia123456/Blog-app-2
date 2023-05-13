@@ -147,6 +147,25 @@ body {
   justify-content: center;
   background-color: #fff;
 }
+
+.form-sign-up {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: bisque;
+}
+
+.form-fields-sign-up {
+  width: 250px;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 8px;
+}
 /* .sign-in-up h2 {
   text-align: center;
 } */
