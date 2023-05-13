@@ -37,14 +37,12 @@
             <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: "Confirm Password", class: "form-fields-sign-up " %>
           </div>
 
-          <div class="sign-btn-checkbox">
-            <div class="actions">
-              <%= f.submit "Sign up" %>
-            </div>
+          <div class="sign-up-btn-container">
+            <%= f.submit "Sign up", class: "sign-up-btn" %>
           </div>
         </div>  
       <% end %>
-      <div class="sign-btn-checkbox links">
+      <div class="sign-up-btn-checkbox links">
         <%= render "devise/shared/links" %>
       </div>
     </div>
