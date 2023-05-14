@@ -1,7 +1,6 @@
 <div class="users-main-container">
-  <ul>
-    <% @users.each do |user| %>
-      <%= render "shared/user", :user => user %>
-    <% end %>
-  </ul>
+  <div class="nav"></div>
+  <% @users.each do |user| %>
+    <%= render "shared/user", :user => user %>
+  <% end %>
 </div>

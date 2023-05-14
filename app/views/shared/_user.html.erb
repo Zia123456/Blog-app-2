@@ -1,11 +1,11 @@
 <%= link_to user_path(user) do %>
-    <div class="user-container">
-      <div class="img-container">
-        <img src="<%= user.photo %>" alt="avatar">
-      </div>
-      <div class="user_details">
-        <h2 class="name"><%= user.name %></h2>
-        <p class="nu-of-posts">Number of posts: <%= user.posts_counter %></p>
-      </div>
+  <div class="user-container">
+    <div class="img-container">
+      <img src="<%= user.photo %>" alt="avatar">
     </div>
-  <% end %>
+    <div class="user_details">
+      <h2 class="name"><%= user.name %></h2>
+      <p class="nu-of-posts">Number of posts: <%= user.posts_counter %></p>
+    </div>
+  </div>
+<% end %>
