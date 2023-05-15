@@ -1,147 +1,190 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
-
+html,
 body {
-  background-color: blanchedalmond;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
 }
 
-.user-container {
-  width: 500px;
+.main-login-container {
+  width: 100%;
+  height: 100%;
   display: flex;
-  gap: 20px;
-  margin-top: 20px;
+  flex-direction: row;
+  background-color: rgb(93, 191, 252);
 }
 
-.img-container {
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-  background-color: black;
-}
-
-.user_details {
-  width: 380px;
-  height: 100px;
-  padding-left: 20px;
-  border: 1px solid black;
-}
-
-.nu-of-posts {
-  margin-left: 200px;
-}
-
-.bio-container {
-  width: 480px;
-  height: 150px;
-  padding-left: 20px;
-  margin-top: 20px;
-  border: 1px solid black;
-  background-color: cadetblue;
-}
-
-.post-container {
-  width: 480px;
-  height: 120px;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-top: 5px;
-  border: 1px solid black;
-}
-
-.comments {
-  width: 480px;
-  padding-left: 20px;
-  margin-top: 20px;
-  border: 1px solid black;
-}
-
-.post-details {
-  width: 480px;
-  padding-left: 20px;
-  padding-top: 20px;
-  border: 1px solid black;
-}
-
-.btn {
-  margin-top: 20px;
-}
-
-.form-container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  padding: 20px;
-  width: 30%;
-  text-align: center;
-}
-
-.form {
+.logo-main-container {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  background-color: aquamarine;
 }
 
-.form-items {
-  text-align: start;
-  width: 75%;
-  font-size: 1rem;
+.logo-container {
+  width: 150px;
+  height: 150px;
+  margin-top: 150px;
 }
 
-.form-fields {
-  width: 100%;
-  padding: 5px;
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
-.form-text {
-  height: 90px;
-}
-
-.back {
-  text-decoration: underline;
-}
-
-.sign-in-up {
-  display: flex;
-  flex-direction: column;
-  margin: 30px auto 0 auto;
-  gap: 10px;
-  width: 40%;
-}
-
-.sign-in-up h2 {
+.text-container {
+  width: 60%;
   text-align: center;
 }
 
-.sign-btn-checkbox {
+.login-form-container {
+  width: 50%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  width: 75%;
-  margin: 10px auto 0 auto;
-  gap: 10px;
+  justify-content: center;
 }
 
-.btn-sign-in-up {
+.sign-in-up {
+  width: 350px;
+  height: 360px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.form {
   width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.form-items {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-fields {
+  width: 250px;
+  height: 30px;
+  padding-left: 8px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  outline: none;
+}
+
+.field {
+  margin-left: 20px;
 }
 
 .border-black {
   border: 1px solid black;
+  border-radius: 4px;
+  box-shadow: 10px 10px 20px rgba(2, 41, 216, 0.6);
+}
+
+.actions {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-sign-in {
+  width: 260px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: rgb(98, 179, 251);
+}
+
+.recovery-link {
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.msg {
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 68%;
+}
+
+.sign-up-form-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-message {
+  position: fixed;
+}
+
+.sign-up {
+  width: 400px;
+  height: 420px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.form-sign-up {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-fields-sign-up {
+  width: 250px;
+  height: 30px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 8px;
+}
+
+.sign-up-btn {
+  width: 260px;
+  height: 35px;
+  border: none;
+  border-radius: 4px;
+  font-size: medium;
+  background-color: rgb(98, 179, 251);
+}
+
+.users-main-container {
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  background-color: cornflowerblue;
 }
