@@ -13,4 +13,8 @@ class User < ApplicationRecord
   def recent_posts
     posts.includes(:author).order(created_at: :desc).limit(3)
   end
+
+  def default_profile_picture_url
+    ActionController::Base.helpers.asset_path('profile.png')
+  end
 end

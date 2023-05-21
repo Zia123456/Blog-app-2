@@ -179,11 +179,11 @@ body {
 
 .users-main-container {
   width: 100%;
-  height: 100%;
   background-color: bisque;
 }
 
 .nav {
+  position: fixed;
   width: 100%;
   height: 60px;
   display: flex;
@@ -223,4 +223,14 @@ body {
   height: 50px;
   margin-left: 100px;
   border-radius: 50%;
+}
+
+.default-profile {
+  width: 100px;
+  height: 100px;
+}
+
+.user-container {
+  padding-top: 60px;
+  background-color: aqua;
 }

@@ -10,7 +10,10 @@
       <div id="search-results"></div>
     </div>
     <div class="profile-container">
-      <%= image_tag('blogify.png', alt: 'Logo', class: 'profile-img')  %>
+      <%= image_tag('profile.png', alt: 'Logo', class: 'profile-img')  %>
+      <% if user_signed_in? %>
+       <%= current_user.name %>
+      <% end %>
     </div>
   </div>
   <% @users.each do |user| %>
