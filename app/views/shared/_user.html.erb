@@ -1,15 +1,19 @@
-<%= link_to user_path(user) do %>
-  <div class="user-container">
-    <div class="img-container">
-      <% if user.photo.present? %>
-        <%= image_tag @user.photo.url %>
-      <% else %>
-        <%= image_tag user.default_profile_picture_url, class:'default-profile' %>
-      <% end %>
+<% if user != current_user %>
+  <%= link_to user_path(user) do %>
+    <div class="user-container">
+      <div class="img-container">
+        <% if user.photo.present? %>
+          <%= image_tag @user.photo.url %>
+        <% else %>
+          <%= image_tag user.default_profile_picture_url, class:'default-profile' %>
+        <% end %>
+      </div>
+      <div class="user_details">
+        <h2 class="name">
+          <%= user.name %> 
+        </h2>
+        <p class="nu-of-posts">Number of posts: <%= user.posts_counter %></p>
+      </div>
     </div>
-    <div class="user_details">
-      <h2 class="name"><%= user.name %></h2>
-      <p class="nu-of-posts">Number of posts: <%= user.posts_counter %></p>
-    </div>
-  </div>
+  <% end %>
 <% end %>
