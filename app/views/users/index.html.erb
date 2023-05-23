@@ -16,7 +16,9 @@
       <% end %>
     </div>
   </div>
-  <% @users.each do |user| %>
-    <%= render "shared/user", :user => user %>
-  <% end %>
+  <div class="users-container">
+    <% @users.each do |user| %>
+      <%= render "shared/user", :user => user %>
+    <% end %>
+  </div>
 </div>
