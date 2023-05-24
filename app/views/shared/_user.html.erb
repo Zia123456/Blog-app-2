@@ -1,5 +1,5 @@
 <% if user != current_user %>
-  <%= link_to user_path(user) do %>
+  <%= link_to user_path(user), class: "link" do %>
     <div class="user-container">
       <div class="img-container">
         <% if user.photo.present? %>
@@ -9,7 +9,7 @@
         <% end %>
       </div>
       <div class="user_details">
-        <h2 class="name">
+        <h2 class="name" >
           <%= user.name %> 
         </h2>
         <p class="nu-of-posts">Number of posts: <%= user.posts_counter %></p>

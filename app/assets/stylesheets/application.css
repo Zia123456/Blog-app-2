@@ -182,7 +182,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: bisque;
 }
 
 .nav {
@@ -234,14 +233,36 @@ body {
   border-radius: 50%;
 }
 
+.users-container {
+  margin-top: 60px;
+  padding-top: 20px;
+}
+
 .user-container {
   width: 700px;
   border-radius: 8px;
-  background-color: aqua;
+  background-color: rgb(215, 248, 248);
 }
 
-.users-container {
-  background-color: black;
-  margin-top: 60px;
+.img-container {
+  padding-left: 20px;
+}
+
+.user_details {
+  padding-left: 20px;
   padding-top: 20px;
+}
+
+.name {
+  margin-top: -20px;
+}
+
+.nu-of-posts {
+  margin-top: -15px;
+  padding-bottom: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }
