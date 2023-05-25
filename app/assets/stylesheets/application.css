@@ -266,3 +266,10 @@ body {
   text-decoration: none;
   color: black;
 }
+
+.single-user-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blanchedalmond;
+}
