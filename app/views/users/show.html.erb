@@ -1,19 +1,14 @@
 <div class='single-user-main-container'>
   <div class="single_user">
     <%= render "shared/user", user: @user %>
-    <div class="bio-container">
-      <h3>Bio</h3>
-      <p><%= @user.bio %></p>
-    </div>
   </div>
 
   <div class="posts-container">
-    
-      <% @recent_posts.each do |post| %>
-        <%= link_to user_post_path(@user, post), class: "post" do %>
-          <%= render "shared/posts", post: post %> 
-        <% end %>
+    <% @recent_posts.each do |post| %>
+      <%= link_to user_post_path(@user, post), class: "post" do %>
+        <%= render "shared/posts", post: post %> 
       <% end %>
+    <% end %>
   </div>
 
   <button type="button" class="btn">

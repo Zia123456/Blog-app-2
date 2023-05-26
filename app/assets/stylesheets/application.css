@@ -246,6 +246,12 @@ body {
 
 .img-container {
   padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bio-container {
+  width: 70%;
 }
 
 .user_details {
