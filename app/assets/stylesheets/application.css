@@ -279,3 +279,9 @@ body {
   align-items: center;
   background-color: blanchedalmond;
 }
+
+.post-container {
+  width: 700px;
+  border-radius: 8px;
+  background-color: rgb(247, 119, 228);
+}
