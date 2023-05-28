@@ -285,3 +285,20 @@ body {
   border-radius: 8px;
   background-color: rgb(247, 119, 228);
 }
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+}
+
+.title {
+  width: 80%;
+  padding-left: 20px;
+  background-color: blueviolet;
+}
+
+.date {
+  padding: 10px;
+  background-color: chartreuse;
+}
