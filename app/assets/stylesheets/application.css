@@ -282,23 +282,35 @@ body {
 
 .post-container {
   width: 700px;
+  margin-top: 20px;
   border-radius: 8px;
-  background-color: rgb(247, 119, 228);
+  color: black;
+  background-color: rgb(255, 249, 254);
 }
 
 .post-header {
   display: flex;
   justify-content: space-between;
-  background-color: aqua;
 }
 
 .title {
   width: 80%;
   padding-left: 20px;
-  background-color: blueviolet;
 }
 
 .date {
   padding: 10px;
-  background-color: chartreuse;
+}
+
+.post-body {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.like-and-comment {
+  padding: 20px;
+}
+
+.post {
+  text-decoration: none;
 }
