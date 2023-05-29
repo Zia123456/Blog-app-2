@@ -1,7 +1,11 @@
 <div class="post-container">
-    <h3> Post'#'<%= post.id %></h3>
-    <p><%= post.title  %></p>
-    <p><%= truncate(post.text, length: 150, omission: "...") %></p>
+    <div class="post-header">
+      <h1 class="title"><%= post.title  %></h1>
+      <p class="date"><%= post.created_at.strftime("%Y-%m-%d") %></p>
+    </div>
+    <div class="post-body">
+      <p><%= truncate(post.text, length: 150, omission: "...") %></p>
+    </div>
     <div class="like-and-comment">
        Comments : <%= post.comments_counter %>,
        Likes : <%= post.likes_counter %>
