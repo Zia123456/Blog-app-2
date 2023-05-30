@@ -333,3 +333,8 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
+.single-post-container {
+  width: 700px;
+  background-color: bisque;
+}
