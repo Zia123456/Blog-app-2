@@ -338,3 +338,7 @@ body {
   width: 700px;
   background-color: bisque;
 }
+
+.list {
+  list-style: none;
+}
