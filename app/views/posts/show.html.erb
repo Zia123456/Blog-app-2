@@ -1,19 +1,21 @@
-<div class="single-post-container">
-  <div class="post-details">
-    <h2>Post # <%= @posts.id %> by <%= @posts.author.name %></h2>
-    <p><%= @posts.title  %></p>
-    <p> <%= @posts.text %></p>
-  </div>
-  
-  <div class="comments">
-    <%= render "shared/comments", post: @posts %>
-  </div>
-  <p class="post-likes-comments">Comments: <%= @posts.comments_counter %>, Likes: <%= @posts.likes_counter %></p>
+<div class="single-post-main-container">
+  <div class="single-post-container">
+    <div class="post-details">
+      <h2>Post # <%= @posts.id %> by <%= @posts.author.name %></h2>
+      <h2><%= @posts.title  %></h2>
+      <p> <%= @posts.text %></p>
+    </div>
+    
+    <div class="comments">
+      <%= render "shared/comments", post: @posts %>
+    </div>
+    <p class="post-likes-comments">Comments: <%= @posts.comments_counter %>, Likes: <%= @posts.likes_counter %></p>
 
-  <div class="like-comment-btn">
-      <%= form_with model: @like, url: user_post_likes_path(user_id: @posts.author.id, post_id: @posts.id), local: true do |form| %>
-        <%= form.submit "Add a like", class: "btn" %>
-      <% end %>
-      <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @posts.author.id, post_id: @posts.id)  %></button>
+    <div class="btn-container">
+        <%= form_with model: @like, url: user_post_likes_path(user_id: @posts.author.id, post_id: @posts.id), class: "btn", local: true do |form| %>
+          <%= form.submit "Add a like", class: "btn" %>
+        <% end %>
+        <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @posts.author.id, post_id: @posts.id)  %></button>
+    </div>
   </div>
 </div>

@@ -334,11 +334,29 @@ body {
   color: #fff;
 }
 
+.single-post-main-container {
+  width: 100%;
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
 .single-post-container {
   width: 700px;
+  border-radius: 8px;
+  margin-top: 40px;
+  padding: 20px;
   background-color: bisque;
 }
 
 .list {
   list-style: none;
+}
+
+.like-comment-btn {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
 }
