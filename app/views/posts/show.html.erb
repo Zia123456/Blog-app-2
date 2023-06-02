@@ -10,12 +10,12 @@
       <%= render "shared/comments", post: @posts %>
     </div>
     <p class="post-likes-comments">Comments: <%= @posts.comments_counter %>, Likes: <%= @posts.likes_counter %></p>
+  </div>
 
-    <div class="btn-container">
-        <%= form_with model: @like, url: user_post_likes_path(user_id: @posts.author.id, post_id: @posts.id), class: "btn", local: true do |form| %>
-          <%= form.submit "Add a like", class: "btn" %>
-        <% end %>
-        <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @posts.author.id, post_id: @posts.id)  %></button>
-    </div>
+  <div class="btn-container">
+    <%= form_with model: @like, url: user_post_likes_path(user_id: @posts.author.id, post_id: @posts.id), class: "btn", local: true do |form| %>
+      <%= form.submit "Add a like", class: "btn" %>
+    <% end %>
+    <button type="button" class="btn"><%= link_to "Add a comment", new_user_post_comment_path(user_id: @posts.author.id, post_id: @posts.id), class: "btn"  %></button>
   </div>
 </div>
