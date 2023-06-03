@@ -1,13 +1,12 @@
-<h1>Here is a list of posts</h1>
 <div class="posts">
-<%= render partial: "shared/user", locals: { user: @user } %>
-<% @posts.each do |post| %>
-  <%= link_to user_post_path(@user, post), class: "post" do %>
-    <%= render "shared/posts", post: post %>
-    <div class="comments">
-      <%= render "shared/comments", post: post %>
-    </div>
+  <%= render partial: "shared/user", locals: { user: @user } %>
+  <% @posts.each do |post| %>
+    <%= link_to user_post_path(@user, post), class: "post" do %>
+      <%= render "shared/posts", post: post %>
+      <div class="comments">
+        <%= render "shared/comments", post: post %>
+      </div>
+    <% end %>
   <% end %>
-<% end %>
-<button type="button" class="btn">Pagination</button>
+  <button type="button" class="btn">Pagination</button>
 </div>
