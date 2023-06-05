@@ -325,6 +325,9 @@ body {
 
 .btn {
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   border-radius: 8px;
   outline: none;
@@ -332,4 +335,36 @@ body {
   font-size: large;
   text-decoration: none;
   color: #fff;
+}
+
+.single-post-main-container {
+  width: 100%;
+  margin-top: -20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-post-container {
+  width: 700px;
+  border-radius: 8px;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgb(215, 248, 248);
+}
+
+.list {
+  list-style: none;
+}
+
+.like-comment-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
