@@ -344,7 +344,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: aqua;
 }
 
 .single-post-container {
@@ -352,7 +351,7 @@ body {
   border-radius: 8px;
   margin-top: 40px;
   padding: 20px;
-  background-color: bisque;
+  background-color: rgb(215, 248, 248);
 }
 
 .list {
@@ -360,7 +359,6 @@ body {
 }
 
 .like-comment-btn {
-  background-color: blueviolet;
   display: flex;
   justify-content: space-between;
 }
