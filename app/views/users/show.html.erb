@@ -1,22 +1,25 @@
 <div class='single-user-main-container'>
-  <div class="single_user">
-    <%= render "shared/user", user: @user %>
-  </div>
+  <%= render "shared/navbar" %>
+  <div class='single-user-container'>
+    <div class="single_user">
+      <%= render "shared/user", user: @user %>
+    </div>
 
-  <div class="posts-container">
-    <% @recent_posts.each do |post| %>
-      <%= link_to user_post_path(@user, post), class: "post" do %>
-        <%= render "shared/posts", post: post %> 
+    <div class="posts-container">
+      <% @recent_posts.each do |post| %>
+        <%= link_to user_post_path(@user, post), class: "post" do %>
+          <%= render "shared/posts", post: post %> 
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
-  
-  <div class="btn-container">
-    <button type="button" class="btn">
-      <%= link_to "See All Posts", user_posts_path(@user), class: "btn" %>
-    </button>
-    <button type="button" class="btn">
-      <%= link_to "Create a post", new_user_post_path(@user), class: "btn" %>
-    </button>
+    </div>
+    
+    <div class="btn-container">
+      <button type="button" class="btn">
+        <%= link_to "See All Posts", user_posts_path(@user), class: "btn" %>
+      </button>
+      <button type="button" class="btn">
+        <%= link_to "Create a post", new_user_post_path(@user), class: "btn" %>
+      </button>
+    </div>
   </div>
 </div>
