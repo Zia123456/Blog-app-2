@@ -1,0 +1,17 @@
+<div class="nav">
+    <div class="nav-item-logo-container">
+      <%= image_tag('blogify.png', alt: 'Logo', class: 'nav-logo')  %>
+    </div>
+    <div class="nav-item-search-container">
+      <%= form_tag search_users_path, remote: true do %>
+        <%= text_field_tag :query, nil, placeholder: 'Search...', id: 'search-query', class: 'search-nav' %>
+      <% end %>
+      <div id="search-results"></div>
+    </div>
+    <div class="profile-container">
+      <%= image_tag('profile.png', alt: 'Logo', class: 'profile-img')  %>
+      <% if user_signed_in? %>
+       <%= current_user.name %>
+      <% end %>
+    </div>
+</div>

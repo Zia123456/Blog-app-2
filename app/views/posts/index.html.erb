@@ -1,8 +1,11 @@
-<div class="posts">
-  <%= render partial: "shared/user", locals: { user: @user } %>
-  <% @posts.each do |post| %>
-    <%= link_to user_post_path(@user, post), class: "post" do %>
-      <%= render "shared/posts", post: post %>
+<div class="posts-main-container">
+  <%= render "shared/navbar" %>
+  <div class="posts-container">
+    <%= render partial: "shared/user", locals: { user: @user } %>
+    <% @posts.each do |post| %>
+      <%= link_to user_post_path(@user, post), class: "post" do %>
+        <%= render "shared/posts", post: post %>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
